@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>productos</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/styles.css">
+<script src="js/javascript.js"></script>
+
+</head>
+<body>
+	<h1>productos</h1>
+	<form onsubmit="return formSubmitted();">
+    <fieldset>
+		<p>producto:</p>
+      <select name="nombre" id="nombre">
+    <option value="coca cola">coca cola</option>
+    <option value="fanta">Fanta</option>
+    <option value="pepsi">Pepsi</option>
+    <option value="zumo">Zumo</option>
+  </select>
+ <br>
+		<p>cantidad:</p>
+  		<input type="number" name="cantidad" id=cantidad>
+  		<br>
+      <div class="register-switch">
+  		  <input type="radio" name="stock" value="in" id=tipo class="register-switch-input" checked>
+        <label for="tipo" class="register-switch-label">entrada</label>
+  		  <input type="radio" name="stock" value="out" id=tipo2 class="register-switch-input">
+        <label for="tipo2" class="register-switch-label">salida</label>
+      </div>
+      <br>
+  		<p>comentario:</p>
+  		<textarea rows="4" cols="50" id=comentario></textarea><br>
+
+
+  		<button class="boton">crear</button>
+    </fieldset>
+	</form>
+
+  <h2>lista de productos</h2> 
+  <table>
+
+</table>
+  <div id="productos"></div>
+  <p><button onclick="emptyList();">limpiar</button> 
+  </p>
+
+</body>
+</html>
